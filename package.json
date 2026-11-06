@@ -1,13 +1,16 @@
 {
   "name": "poquito-habit-tracker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "Prototipo navegable de Habit Tracker con estética pastel",
+  "description": "Poquito: Habit Tracker con React Native, Expo y SQLite",
   "scripts": {
-    "start": "node server.cjs",
-    "check": "node --check dist/app.js && node --check server.cjs"
+    "start": "npm --prefix mobile start",
+    "android": "npm --prefix mobile run android",
+    "prototype": "node server.cjs",
+    "check": "npm --prefix mobile run typecheck && npm --prefix mobile run lint && npm --prefix mobile test",
+    "check:prototype": "node --check dist/app.js && node --check server.cjs"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13.0"
   }
 }
