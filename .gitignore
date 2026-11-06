@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.openai/
+.sites-runtime/
+.sites-checkout/
+.agents/
+.codex/
+poquito/
+*.tar.gz
+*.log
+.DS_Store
+Thumbs.db
